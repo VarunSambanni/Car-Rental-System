@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="634.0" prefWidth="817.0" spacing="20.0" style="-fx-background-image: url('bg2.jpg');" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxproj.DisplayCars">
+   <children>
+      <Label fx:id="displayCarsHeading" prefHeight="40.0" prefWidth="874.0" style="-fx-background-color: black;" text="                                          LIST OF CARS" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="-30.0" />
+         </VBox.margin>
+      </Label>
+      <TableView fx:id="table" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="750.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="68.8000236749649" text="ID" />
+          <TableColumn fx:id="model" prefWidth="55.199951171875" text="Model" />
+            <TableColumn fx:id="brand" prefWidth="50.40001678466797" text="Brand" />
+            <TableColumn fx:id="available" prefWidth="58.40000915527344" text="Available" />
+            <TableColumn fx:id="name" prefWidth="85.5999755859375" text="Name" />
+            <TableColumn fx:id="phoneNo" prefWidth="84.0" text="Phone No." />
+            <TableColumn fx:id="address" prefWidth="165.60000610351562" text="Address" />
+            <TableColumn fx:id="cost" prefWidth="62.39996337890625" text="Cost/Hr" />
+            <TableColumn fx:id="startTime" prefWidth="116.0" text="Start Time" />
+        </columns>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </TableView>
+      <Button mnemonicParsing="false" onAction="#loggedInScene" text="Back">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>
