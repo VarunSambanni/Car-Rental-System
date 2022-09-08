@@ -49,7 +49,7 @@ public class App extends Application {
             Class.forName("com.mysql.cj.jdbc.Driver");
             String user = "user";
             String password = "password";
-            String url = "jdbc:mysql://127.0.0.1:3306/car?user=root";
+            String url = "jdbc:mysql://127.0.0.1:3306/car?user=user";
             connection = DriverManager.getConnection(url, user, password);
         }
         catch (Exception e){
