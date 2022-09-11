@@ -23,12 +23,12 @@ A java application for a managing car rental service, made using JavaFX and MySQ
 
 ## Rent A Car
 
-![rent](https://user-images.githubusercontent.com/87132174/189524421-dd72e57e-dc14-4bc7-8329-08ed2f816b6b.png)
+![rent](https://user-images.githubusercontent.com/87132174/189524522-2fbf0050-1ddd-47b7-8d80-c8970f34efad.png)
 
 ## Return Car
 
 ![return](https://user-images.githubusercontent.com/87132174/189524430-86e0eddc-7997-4159-85d3-c424cb713466.png)
 
-## Delete a Car
+## Delete A Car
 
 ![delete](https://user-images.githubusercontent.com/87132174/189524437-d1d16031-854e-4261-98f3-bfbac38a83a7.png)
