@@ -11,7 +11,7 @@ A java application for a managing car rental service, made using JavaFX and MySQ
 
 ## Display All Cars
 
-![display allCars](https://user-images.githubusercontent.com/87132174/189524386-67ad3a81-58ce-497a-9086-71a9d9480825.png)
+![display allCars](https://user-images.githubusercontent.com/87132174/189524596-9b04ef95-c1a4-4219-a9aa-111160f7070c.png)
 
 ## Add New Car
 
