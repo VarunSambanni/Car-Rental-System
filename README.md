@@ -1,5 +1,5 @@
 # Car-Rental-System
-A java application for a managing car rental service, made using JavaFX and MySQL. Allows the user to add, edit, delete and provide cars for rent, and calculate the price when the vehicle is returned. 
+A java application for managing car rental service, made using JavaFX and MySQL. Allows the user to add, edit, delete and provide cars for rent, and calculate the price when the vehicle is returned. 
 
 ## Login
 
