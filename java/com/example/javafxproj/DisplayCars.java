@@ -48,7 +48,7 @@ public class DisplayCars {
             ResultSet resultSet = statement.executeQuery("SELECT * FROM CAR") ;
             while(resultSet.next()){
                 totalCars ++ ;
-                if (resultSet.getString("available").equals("Yes")){
+                if (resultSet.getString("available").equals("Yes") || resultSet.getString("available").isEmpty() ){
                     availableCars++ ;
                 }
                 cars.add(new Car(resultSet.getString("id"), resultSet.getString("model"), resultSet.getString("brand"), resultSet.getString("available").isEmpty() ? "Yes" : resultSet.getString("available"),
@@ -105,7 +105,7 @@ public class DisplayCars {
             stmt.setString(1, inputId.getText());
             stmt.setString(2, inputModel.getText());
             stmt.setString(3, inputBrand.getText());
-            stmt.setString(4, inputAvailable.getText());
+            stmt.setString(4, "Yes");
             stmt.setString(5, inputName.getText());
             stmt.setString(6, inputPhoneNo.getText());
             stmt.setString(7, inputAddress.getText()) ;
@@ -275,7 +275,7 @@ public class DisplayCars {
             }
             if (flag == true){
                 String sqlUpdateQuery = String.format("UPDATE CAR SET available = '%s', name = '%s', phoneNo = '%s', address = '%s', startTime = '%s' WHERE id = '%s'",
-                        "Yes", "NA", "NA",  "NA", "NA", carId);
+                        "Yes", "", "",  "", "", carId);
                 statement.executeUpdate(sqlUpdateQuery) ;
                 returnName.setText(name);
                 returnStartTime.setText(startTime);
